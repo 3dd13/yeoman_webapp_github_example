@@ -6,15 +6,17 @@ decide your project name with meaningful name (I am using "yeoman\_webapp\_githu
     mkdir yeoman_webapp_github_example
     cd yeoman_webapp_github_example
     brew install node
-    npm update -g yo
+    npm install -g yo
     npm install -g generator-jasmine generator-webapp
     yo webapp --test-framework=jasmine
 
-
 References:
-https://github.com/yeoman/generator-webapp
-http://yeoman.io/
 
+* https://github.com/yeoman/generator-webapp
+* http://yeoman.io/
+* http://brew.sh/
+
+        ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 Start Server
 ===================
@@ -35,9 +37,9 @@ read several files and see how the things correlate to the webpage on browser:
 - app/styles/main.css
 
 References:
-http://www.sublimetext.com/2
-https://sublime.wbond.net/installation#st2
-Install Sublime Text package: SideBarEnhancements
+* http://www.sublimetext.com/2
+* https://sublime.wbond.net/installation#st2
+* Install Sublime Text package: SideBarEnhancements
 
 
 Store Source Code to Github
