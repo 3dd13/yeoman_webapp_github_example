@@ -1,6 +1,8 @@
 Generate File Directory
 ===================
 
+decide your project name with meaningful name (I am using "yeoman\_webapp\_github\_example" here)
+
     mkdir yeoman_webapp_github_example
     cd yeoman_webapp_github_example
     brew install node
