@@ -1,8 +1,8 @@
 Generate File Directory
 ===================
 
-    mkdir yeoman\_webapp\_github\_example
-    cd yeoman\_webapp\_github\_example
+    mkdir yeoman_webapp_github_example
+    cd yeoman_webapp_github_example
     brew install node
     npm update -g yo
     npm install -g generator-jasmine generator-webapp
@@ -74,3 +74,6 @@ http://yeoman.io/deployment.html
 1. Remove the dist directory from the .gitignore file
 2. git add dist && git commit -m "Initial dist subtree commit"
 3. git subtree push --prefix dist origin gh-pages
+
+After few minutes, you should see your release package here (replace the domain portion with your github name):
+http://3dd13.github.io/yeoman_webapp_github_example/
