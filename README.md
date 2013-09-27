@@ -81,3 +81,28 @@ http://yeoman.io/deployment.html
 
 After few minutes, you should see your release package here (replace the domain portion with your github name):
 http://3dd13.github.io/yeoman_webapp_github_example/
+
+
+Automated Test on your Javascript files
+===================
+
+update your Gruntfile to include your javascript files, add src option to jasmine configuration
+
+    jasmine: {
+        all: {
+            src: [
+              '<%= yeoman.app %>/scripts/{,*/}*.js'
+            ],
+            options: {
+                specs: 'test/spec/{,*/}*.js'
+            }
+        }
+    },
+
+write some test cases in test/spec/test.js:
+
+    expect(formatName("Eddie", "Lau")).toEqual("Hello Eddie Lau")
+
+run the test cases in Terminal:
+
+    grunt test

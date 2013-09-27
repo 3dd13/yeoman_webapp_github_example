@@ -98,6 +98,9 @@ module.exports = function (grunt) {
         },
         jasmine: {
             all: {
+                src: [
+                  '<%= yeoman.app %>/scripts/{,*/}*.js'
+                ],
                 options: {
                     specs: 'test/spec/{,*/}*.js'
                 }
