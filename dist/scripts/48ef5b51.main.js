@@ -1,0 +1,1 @@
+function formatName(a,b){return"Hello "+a+" "+b}console.log("'Allo 'Allo!");
