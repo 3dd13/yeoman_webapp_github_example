@@ -10,53 +10,63 @@ decide your project name with meaningful name (I am using "yeoman\_webapp\_githu
     npm install -g generator-jasmine generator-webapp
     yo webapp --test-framework=jasmine
 
-References:
+Tool References:
 
-* https://github.com/yeoman/generator-webapp
-* http://yeoman.io/
-* http://brew.sh/
+* [About Yeoman](http://yeoman.io/)
+* [About Webapp generator](https://github.com/yeoman/generator-webapp)
+* [Setup Homebrew](http://brew.sh/)
 
-        ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
-Start Server
+Start Server in Terminal
 ===================
 
     grunt server
 
-the default webpage will be opened
+the default webpage will be opened in your browser
+you can start changing your index.html and main.css files in your editor, the changes will be automatically updated in the browser
 
 
-Open In IDE
-=================== 
+Edit Code in Sublime Text 2
+===================
 
-     subl .
+1. open the folder in Sublime Text 2
 
-read several files and see how the things correlate to the webpage on browser:
-- app/index.html
-- app/scripts/main.js
-- app/styles/main.css
+2. read several files and see how the things correlate to the webpage on browser:
+
+    - app/index.html
+    - app/scripts/main.js
+    - app/styles/main.css
+
 
 References:
-* http://www.sublimetext.com/2
-* https://sublime.wbond.net/installation#st2
-* Install Sublime Text package: SideBarEnhancements
+* [Download Sublime Text 2 Here](http://www.sublimetext.com/2)
+* [Advanced: Install Package Control](https://sublime.wbond.net/installation#st2)
+* Advanced: Install SideBarEnhancements through package control
+* [Advanced: Open Sublime Text from Terminal](http://www.sublimetext.com/docs/2/osx_command_line.html) Note: you need to add ~/bin directory to your PATH (.bash\_profile)
 
 
-Store Source Code to Github
+Stop Server in Terminal
+===================
+
+    Ctrl + C
+
+
+Create New Repository on Github.com
 ===================
 
 * Login to your Github
 * Create repository on github.com yeoman\_webapp\_github\_example
+    * use the project name you chose
+    * do not initialize repository with README.md
 
-Copy the commands displayed on the repository page, and run it in Terminal.
-Similar to the following (except the git repository name)
 
-    touch README.md
+Submit your local changes to Github.com repository
+===================
+
+Setup your local project folder to be git-enabled: (use your own project name)
+
     git init
-    git add README.md
-    git commit -m "first commit"
     git remote add origin git@github.com:3dd13/yeoman_webapp_github_example.git
-    git push -u origin master
 
 push all files to github:
 
@@ -65,44 +75,8 @@ push all files to github:
     git push origin master
 
 
-Deployment to Github pages
+Other references:
 ===================
 
-Generate release version to dist folder:
-
-    grunt build
-
-Follow step in this guide:
-http://yeoman.io/deployment.html
-
-1. Remove the dist directory from the .gitignore file
-2. git add dist && git commit -m "Initial dist subtree commit"
-3. git subtree push --prefix dist origin gh-pages
-
-After few minutes, you should see your release package here (replace the domain portion with your github name):
-http://3dd13.github.io/yeoman_webapp_github_example/
-
-
-Automated Test on your Javascript files
-===================
-
-update your Gruntfile to include your javascript files, add src option to jasmine configuration
-
-    jasmine: {
-        all: {
-            src: [
-              '<%= yeoman.app %>/scripts/{,*/}*.js'
-            ],
-            options: {
-                specs: 'test/spec/{,*/}*.js'
-            }
-        }
-    },
-
-write some test cases in test/spec/test.js:
-
-    expect(formatName("Eddie", "Lau")).toEqual("Hello Eddie Lau")
-
-run the test cases in Terminal:
-
-    grunt test
+[Publish your files to github.io](https://github.com/3dd13/yeoman_webapp_github_example/wiki/Publish-your-web-page-to-github.io)
+[Testing Javascript Code](https://github.com/3dd13/yeoman_webapp_github_example/wiki/Testing-javascript-code-with-Jasmine)
