@@ -48,16 +48,16 @@ References:
 Stop Server in Terminal
 ===================
 
-    Ctrl + C
+In the Terminal that you ran "grunt server", Press [Ctrl] + [C]
 
 
 Create New Repository on Github.com
 ===================
 
 * Login to your Github
-* Create repository on github.com yeoman\_webapp\_github\_example
-    * use the project name you chose
-    * do not initialize repository with README.md
+* Create a new repository on github.com with yoru project name (my project name: yeoman\_webapp\_github\_example)
+    * Note: use the project name you chose
+    * Note: do not initialize repository with README.md
 
 
 Submit your local changes to Github.com repository
@@ -78,5 +78,5 @@ push all files to github:
 Other references:
 ===================
 
-[Publish your files to github.io](https://github.com/3dd13/yeoman_webapp_github_example/wiki/Publish-your-web-page-to-github.io)
-[Testing Javascript Code](https://github.com/3dd13/yeoman_webapp_github_example/wiki/Testing-javascript-code-with-Jasmine)
+* [Publish your files to github.io](https://github.com/3dd13/yeoman_webapp_github_example/wiki/Publish-your-web-page-to-github.io)
+* [Testing Javascript Code](https://github.com/3dd13/yeoman_webapp_github_example/wiki/Testing-javascript-code-with-Jasmine)
